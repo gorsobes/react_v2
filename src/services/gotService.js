@@ -47,7 +47,7 @@ _transformCharacter(char){
 }
 _transformHouse(house){
     return{
-        name:house.name;
+        name:house.name,
         region:house.region,
         words:house.words,
         titles:house.titles,
@@ -55,4 +55,13 @@ _transformHouse(house){
        ancestralWeapons:house.ancestralWeapons 
     }
 }
-}gi
+
+_transformBook(book){
+    return{
+        name:book.name,
+        numberOfPages:book.numberOfPages,
+        publiser:book.publiser,
+        released:book.released
+    }
+}
+}
